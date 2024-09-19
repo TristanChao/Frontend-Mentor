@@ -1,0 +1,194 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-image: linear-gradient(#1e3756, #171d3f);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+button {
+  cursor: pointer;
+}
+
+.page-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-sb {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.center-all {
+  justify-content: center;
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* ------------------------------------ */
+
+.header {
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 15px;
+  max-width: 600px;
+  flex-basis: 100%;
+}
+
+.header-ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.header-ul li {
+  font-weight: 500;
+  line-height: 0.9;
+}
+
+.score-box {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.score-box * {
+  margin: 0;
+  font-weight: 600;
+}
+
+.score-val {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+/* GAME */
+
+.game {
+  width: 85%;
+  height: 435px;
+  min-width: 305px;
+  max-width: 400px;
+  margin-top: 100px;
+  position: relative;
+}
+
+.hand {
+  width: 85px;
+  height: 85px;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.hand.blank {
+  background-color: #192845;
+  border: 10px solid transparent;
+}
+
+.hand.yellow {
+  border: 10px solid #ebb915;
+}
+
+.hand.light-blue {
+  border: 10px solid #4bb8cc;
+}
+
+.hand.dark-blue {
+  border: 10px solid #5671f2;
+}
+
+.hand.purple {
+  border: 10px solid #8c5de7;
+}
+
+.hand.red {
+  border: 10px solid #de4160;
+}
+
+.hand.game-btn {
+  position: absolute;
+}
+
+.hand.game-btn.yellow {
+  top: 0;
+  left: calc(50% - 110px / 2);
+}
+
+.hand.game-btn.light-blue {
+  top: 110px;
+}
+
+.hand.game-btn.dark-blue {
+  top: 110px;
+  right: 0;
+}
+
+.hand.game-btn.purple {
+  top: 290px;
+  left: 15%;
+}
+
+.hand.game-btn.red {
+  top: 290px;
+  right: 15%;
+}
+
+/* RESULTS */
+
+.result-ctn {
+  width: 85%;
+  min-width: 305px;
+  max-width: 400px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.result-hand {
+  margin-bottom: 20px;
+}
+
+/* RULES */
+
+.rules-ctn {
+  position: absolute;
+  width: 100%;
+  bottom: 80px;
+}
+
+.rules-btn {
+  padding: 10px 15px;
+  background-color: transparent;
+  color: #bbb;
+  border: 2px solid #bbb;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+} */
